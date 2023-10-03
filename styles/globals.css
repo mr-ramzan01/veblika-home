@@ -8,6 +8,23 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.my_custom_scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.my_custom_scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.my_custom_scrollbar::-webkit-scrollbar-thumb {
+  background: #d7d2d2; 
+  border-radius: 5px; 
+}
+
+.my_custom_scrollbar_width_zero::-webkit-scrollbar {
+width: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,12 +33,4 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
