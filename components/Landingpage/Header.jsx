@@ -1,39 +1,13 @@
-import Image from "next/image";
+"use client";
 import React from "react";
+import { useMediaQuery } from "react-responsive";
+import MobileHeader from "./MobileHeader";
+import DesktopHeader from "./DesktopHeader";
+import dynamic from "next/dynamic";
 
 const Header = () => {
-  return (
-    <div className="border border-red-500 p-2 flex h-[70px]">
-      {/* First Div */}
-      <div className="flex border border-black justify-center items-center gap-5">
-        <div>
-          <Image
-            width={180}
-            height={80}
-            className="mx-5 cursor-pointer"
-            alt={"image"}
-            src={"/veblikalogo.png"}
-          />
-        </div>
-        <div className="border border-green-500">
-          <h5 className="text-lg cursor-pointer">Products</h5>
-        </div>
-        <div className="border border-green-500">
-          <h5 className="text-lg cursor-pointer">Customers</h5>
-        </div>
-        <div className="border border-green-500">
-          <h5 className="text-lg cursor-pointer">About Us</h5>
-        </div>
-        <div className="border border-green-500">
-          <h5 className="text-lg cursor-pointer">Contact Us</h5>
-        </div>
-      </div>
-      {/* Second Div */}
-      <div className="border border-blue-500">
-        <div></div>
-      </div>
-    </div>
-  );
+  const isPortrait = useMediaQuery({ query: "(max-width: 950px)" });
+  return <div>{isPortrait ? <MobileHeader /> : <DesktopHeader />}</div>;
 };
 
-export default Header;
+export default dynamic(() => Promise.resolve(Header), { ssr: false });

@@ -29,6 +29,9 @@ module.exports = withMT({
         desktop: "950px",
         // => @media (min-width: 1280px) { ... }
       },
+      boxShadow: {
+        '3xl': 'rgba(0, 0, 0, 0.16) 0px 1px 4px;'
+      },
     },
   },
   plugins: [require("tailwind-scrollbar"), require("flowbite/plugin")],

@@ -25,6 +25,35 @@
 width: 0;
 }
 
+@keyframes float {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-float {
+  animation: float 20s linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes float2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-float2 {
+  animation: float 10s linear;
+  animation-iteration-count: infinite;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
