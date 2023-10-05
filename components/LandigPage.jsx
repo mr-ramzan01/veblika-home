@@ -1,16 +1,16 @@
 import React from 'react'
-import Header from './Landingpage/Header'
-import Footer from './Landingpage/Footer'
 import FirstSection from './Landingpage/FirstSection'
 import BrandWithUsSection from './Landingpage/BrandWithUsSection'
+import FaqComp from './Landingpage/FaqComp'
+import IntegratedAndSignup from './Landingpage/IntegratedAndSignup'
 
 const LandigPage = () => {
   return (
     <div>
         <FirstSection />
-        {/* <BrandWithUsSection /> */}
-        <div className='border-red-500 h-[100vh]'>
-        </div>
+        <FaqComp />
+        <BrandWithUsSection />
+        <IntegratedAndSignup />
     </div>
   )
 }

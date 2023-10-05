@@ -49,9 +49,9 @@ const FirstSection = () => {
           <div className="flex mobile:w-full tablet:w-[70%] m-auto desktop:w-full flex-col gap-8 mobile:text-center desktop:text-left">
             <heading>
               <h1 className="mobile:text-3xl tablet:text-4xl desktop:text-6xl font-thin">
-                Your life's work,
+                {"Your life's work,"}
               </h1>
-              <h1 className="mobile:text-3xl tablet:text-4xl desktop:text-6xl font-thin">powered by our life's work</h1>
+              <h1 className="mobile:text-3xl tablet:text-4xl desktop:text-6xl font-thin">{"powered by our life's work"}</h1>
             </heading>
             <p className="mobile:text-xl desktop:text-2xl text-[#0252b8]">
               A unique and powerful software suite to transform the way you
