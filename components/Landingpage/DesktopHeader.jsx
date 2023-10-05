@@ -52,7 +52,7 @@ const DesktopHeader = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default DesktopHeader
+export default DesktopHeader;
