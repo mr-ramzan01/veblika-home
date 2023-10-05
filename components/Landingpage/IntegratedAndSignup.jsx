@@ -1,5 +1,6 @@
 import React from "react";
 import FormComponent from "./FormComponent";
+import Image from "next/image";
 
 const IntegratedAndSignup = () => {
   return (
@@ -23,7 +24,7 @@ const IntegratedAndSignup = () => {
               </p>
             </div>
             <div className="">
-              <img src="/teaching-img.png" className="" alt="imgage" />
+              <Image width={100} height={100} src="/teaching-img.png" className="" alt="imgage" />
             </div>
           </div>
         </div>

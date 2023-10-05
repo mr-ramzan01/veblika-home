@@ -4,7 +4,7 @@ import BrandWithUsSection from './Landingpage/BrandWithUsSection'
 import FaqComp from './Landingpage/FaqComp'
 import IntegratedAndSignup from './Landingpage/IntegratedAndSignup'
 
-const LandigPage = () => {
+const LandingPage = () => {
   return (
     <div>
         <FirstSection />
@@ -15,4 +15,4 @@ const LandigPage = () => {
   )
 }
 
-export default LandigPage
+export default LandingPage;

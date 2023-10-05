@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { HiOutlineMenu } from "react-icons/hi";
-import Menu from "./Drawer";
+import Menu from "./Menu";
 
 const MobileHeader = () => {
   const [open, setOpen] = React.useState(false);

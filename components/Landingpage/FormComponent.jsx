@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { TiTickOutline } from "react-icons/ti";
 const initialState = {
   email: "",
   password: "",
@@ -50,7 +49,7 @@ const FormComponent = () => {
                 placeholder=" "
                 required
               />
-              <label for="floating_first_name" className={labelClassValue}>
+              <label htmlFor={"floating_first_name"} className={labelClassValue}>
                 First name
               </label>
             </div>
@@ -65,7 +64,7 @@ const FormComponent = () => {
                 placeholder=" "
                 required
               />
-              <label for="floating_last_name" className={labelClassValue}>
+              <label htmlFor="floating_last_name" className={labelClassValue}>
                 Last name
               </label>
             </div>
@@ -81,7 +80,7 @@ const FormComponent = () => {
               placeholder=" "
               required
             />
-            <label for="floating_email" className={labelClassValue}>
+            <label htmlFor="floating_email" className={labelClassValue}>
               Email address
             </label>
           </div>
@@ -96,7 +95,7 @@ const FormComponent = () => {
               placeholder=" "
               required
             />
-            <label for="floating_password" className={labelClassValue}>
+            <label htmlFor="floating_password" className={labelClassValue}>
               Password
             </label>
           </div>
@@ -111,7 +110,7 @@ const FormComponent = () => {
               placeholder=" "
               required
             />
-            <label for="floating_repeat_password" className={labelClassValue}>
+            <label htmlFor="floating_repeat_password" className={labelClassValue}>
               Confirm password
             </label>
           </div>
@@ -127,7 +126,7 @@ const FormComponent = () => {
               placeholder=" "
               required
             />
-            <label for="floating_phone" className={labelClassValue}>
+            <label htmlFor="floating_phone" className={labelClassValue}>
               Phone number
             </label>
           </div>
@@ -142,7 +141,7 @@ const FormComponent = () => {
               placeholder=" "
               required
             />
-            <label for="floating_company" className={labelClassValue}>
+            <label htmlFor="floating_company" className={labelClassValue}>
               {`Company (Ex. Google)`}
             </label>
           </div>
