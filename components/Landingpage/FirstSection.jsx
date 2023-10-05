@@ -68,7 +68,7 @@ const FirstSection = () => {
             </div>
           </div>
           <div className="mt-10">
-            <img src="/firstsectionimage.png" className="object-fill" />
+            <img src="/firstsectionimage.png" className="object-fill" alt='image' />
           </div>
         </div>
 

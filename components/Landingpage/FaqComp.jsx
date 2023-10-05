@@ -14,7 +14,7 @@ const FaqComp = () => {
         {/* Image div */}
         <div className="m-auto flex flex-grow-1 justify-center items-center mobile:w-full desktop:w-[50%]">
           <div className="m-auto mobile:w-[100%] tablet:w-[70%] mobile:my-5 desktop:my-0 desktop:w-[100%]">
-            <img src='/teaching-img.png' className="" alt='imgage'/>
+            <img src='/teaching-img.png' className="" alt='image'/>
           </div>
         </div>
       </div>

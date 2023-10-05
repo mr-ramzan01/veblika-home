@@ -8,7 +8,8 @@ const MobileHeader = () => {
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
   return (
-    <header className="text-base shadow px-4 py-2 flex items-center justify-between mobile:h-[50px] tablet:h-[70px]">
+    <div className="relative mobile:h-[50px] tablet:h-[70px]">
+      <header className="text-base shadow px-4 fixed w-full z-50 bg-[#ffffff] py-2 flex items-center justify-between">
       {open && <Menu open={open} closeDrawer={closeDrawer} />}
       <div className="">
         <HiOutlineMenu onClick={openDrawer} size={30} />
@@ -23,6 +24,7 @@ const MobileHeader = () => {
         />
       </div>
     </header>
+    </div>
   );
 };
 

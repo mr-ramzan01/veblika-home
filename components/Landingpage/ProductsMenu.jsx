@@ -75,6 +75,7 @@ const ProductsMenu = () => {
             width={100}
             height={100}
             className="h-28 w-28"
+            alt='Image'
           />
         </Card>
         <ul className="col-span-4 flex w-full flex-col gap-1">

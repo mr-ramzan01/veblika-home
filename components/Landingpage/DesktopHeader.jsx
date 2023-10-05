@@ -7,7 +7,8 @@ import ProductsMenu from "./ProductsMenu";
 
 const DesktopHeader = () => {
   return (
-    <header className="text-base shadow px-4 py-2 flex justify-between h-[70px]">
+    <div className="relative h-[70px]">
+      <header className="text-base fixed w-full z-50 bg-[#ffffff] shadow px-4 py-2 flex justify-between ">
       {/* First Div */}
       <div className="flex justify-center items-center gap-5">
         <div>
@@ -52,6 +53,7 @@ const DesktopHeader = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 
